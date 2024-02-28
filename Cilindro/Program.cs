@@ -12,8 +12,10 @@ namespace Cilindro
             float r = float.Parse(Console.ReadLine());
 
             float Volume = MathF.PI * MathF.Pow(r, 2) * a;
+            float Sa = 2 * MathF.PI * r * (r + a);
 
             Console.WriteLine(Volume);
+            Console.WriteLine(Sa);
         }
     }
 }
