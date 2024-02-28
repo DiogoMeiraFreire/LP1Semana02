@@ -12,6 +12,7 @@ namespace SmoothOperator
 
             Console.WriteLine(--n);
             Console.WriteLine(++n);
+            Console.WriteLine(n/2);
         }
     }
 }
