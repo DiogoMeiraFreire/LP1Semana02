@@ -23,7 +23,7 @@ namespace ValoresEspeciais
 
             // Floats
             double  db;
-            float   fl;
+            float   fl, fl2;
             decimal dc;
 
             #endregion
@@ -151,7 +151,7 @@ namespace ValoresEspeciais
 
 // Exercise 7 ----------------------------------------
 
-            #region Overflows
+            #region Overflows and Underflows
 
             Console.WriteLine("\nOverflows: ");
             ui = uint.MaxValue;
@@ -162,6 +162,13 @@ namespace ValoresEspeciais
 
             db = double.MaxValue + 1;
             Console.WriteLine("Double (adding 1): " + db);
+
+
+            Console.WriteLine("\nUnderflows: ");
+            fl = 100000000.0f;
+            fl2 = fl;
+            Console.WriteLine("Float(lack of precision): " 
+                                + (fl2 == fl + 0.0000001f));
 
             #endregion
         }
