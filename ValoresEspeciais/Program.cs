@@ -157,6 +157,12 @@ namespace ValoresEspeciais
             ui = uint.MaxValue;
             Console.WriteLine("Uint: " + (ui + 1));
 
+            db = 2 * double.MaxValue;
+            Console.WriteLine("Double (multiplying by 2): " + db);
+
+            db = double.MaxValue + 1;
+            Console.WriteLine("Double (adding 1): " + db);
+
             #endregion
         }
     }
