@@ -26,9 +26,6 @@ namespace ValoresEspeciais
             float   fl;
             decimal dc;
 
-            // Booleans
-            bool    bl;
-
             #endregion
 
             #region Max Integer prints
@@ -123,6 +120,31 @@ namespace ValoresEspeciais
 
             dc = decimal.MinValue;
             Console.WriteLine("Decimal: " + dc);
+
+            #endregion
+
+            #region Special prints
+
+            Console.WriteLine("\nPositive infinite: ");
+            db = double.PositiveInfinity;
+            Console.WriteLine("Double: " + db);
+
+            fl = float.PositiveInfinity;
+            Console.WriteLine("Float: " + fl);
+
+            Console.WriteLine("\nNegative infinite: ");
+            db = double.NegativeInfinity;
+            Console.WriteLine("Double: " + db);
+
+            fl = float.NegativeInfinity;
+            Console.WriteLine("Float: " + fl);
+            
+            Console.WriteLine("\nNaN: ");
+            db = double.NaN;
+            Console.WriteLine("Double: " + db);
+
+            fl = float.NaN;
+            Console.WriteLine("Float: " + fl);
 
             #endregion
 
