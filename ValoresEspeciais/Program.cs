@@ -148,6 +148,16 @@ namespace ValoresEspeciais
 
             #endregion
 
+
+// Exercise 7 ----------------------------------------
+
+            #region Overflows
+
+            Console.WriteLine("\nOverflows: ");
+            ui = uint.MaxValue;
+            Console.WriteLine("Uint: " + (ui + 1));
+
+            #endregion
         }
     }
 }
